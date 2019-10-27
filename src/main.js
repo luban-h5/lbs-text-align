@@ -11,10 +11,14 @@ const Component = {
   render (h) {
     return (
       <div class="wrap">
-        <a-radio-group value={this.value} onChange={value => {
-          this.$emit('change', value)
-          this.$emit('input', value)
-        }} size="small">
+        <a-radio-group
+          size="small"
+          value={this.value}
+          onChange={value => {
+            this.$emit('change', value)
+            this.$emit('input', value)
+          }}
+        >
           {
             this.textAlignTabs.map(item => (
               <a-tooltip effect="dark" placement="top" key={item.value} title={item.label}>
@@ -49,16 +53,24 @@ const Component = {
   })
 }
 
-const install = function (Vue) {
+// 为组件提供 install 安装方法，供按需引入
+Component.install = function (Vue) {
   Vue.component(Component.name, Component)
 }
 
-// auto install
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue)
-}
+// 默认导出组件
+export default Component
 
-export default {
-  install,
-  Component
-}
+// const install = function (Vue) {
+//   Vue.component(Component.name, Component)
+// }
+
+// auto install
+// if (typeof window !== 'undefined' && window.Vue) {
+//   install(window.Vue)
+// }
+
+// export default {
+//   install,
+//   Component
+// }

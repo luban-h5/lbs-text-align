@@ -1,7 +1,8 @@
 {
   "name": "@luban-h5/lbs-text-align",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
+  "main": "dist/lbs-text-align.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
