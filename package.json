@@ -1,6 +1,6 @@
 {
   "name": "@luban-h5/lbs-text-align",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "dist/lbs-text-align.umd.min.js",
   "scripts": {

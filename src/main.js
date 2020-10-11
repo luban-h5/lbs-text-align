@@ -1,3 +1,12 @@
+/*
+ * @Author: ly525
+ * @Date: 2020-10-11 09:47:30
+ * @LastEditors: ly525
+ * @LastEditTime: 2020-10-11 09:47:43
+ * @FilePath: /lbs-text-align/src/main.js
+ * @Github: https://github.com/ly525/luban-h5
+ * @Description: Do not edit
+ */
 /**
  * #!zh: 鲁班支持组件：文字对齐组件
  * #!en: Component that support Luban: for text align
@@ -7,7 +16,7 @@ import Vue from 'vue'
 Vue.config.productionTip = true
 
 const Component = {
-  name: 'lbp-text-align',
+  name: 'lbs-text-align',
   render (h) {
     return (
       <div class="wrap">
